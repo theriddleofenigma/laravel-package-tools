@@ -1,0 +1,47 @@
+{
+    "name": "theriddleofenigma/laravel-package-tools",
+    "description": "Tools for creating Laravel packages",
+    "keywords": [
+        "theriddleofenigma",
+        "laravel-package-tools"
+    ],
+    "homepage": "https://github.com/theriddleofenigma/laravel-package-tools",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kumaravel",
+            "email": "kumarwindows11@gmail.com",
+            "homepage": "https://github.com/theriddleofenigma",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/contracts": "^7.0|^8.0|^9.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0|^6.23|^7.0",
+        "phpunit/phpunit": "^9.4",
+        "spatie/test-time": "^1.2",
+        "mockery/mockery": "^1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Enigma\\LaravelPackageTools\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Enigma\\LaravelPackageTools\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --colors=always",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
