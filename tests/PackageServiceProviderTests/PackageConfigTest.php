@@ -26,6 +26,6 @@ class PackageConfigTest extends PackageServiceProviderTestCase
             ->artisan('vendor:publish --tag=package-tools-config')
             ->assertExitCode(0);
 
-        $this->assertFileExists(config_path('package-tools.php'));
+        $this->assertFileExists(app()->config_path('package-tools.php'));
     }
 }
